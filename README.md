@@ -12,7 +12,7 @@ This Docker creates a simple SSH tunnel over a server. It is very useful when yo
 
 ```
     Host mysql-tunnel # You can use any name
-            HostName ssh-tunnel.corporate.tld # Tunnel 
+            HostName ssh-tunnel.corporate.tld # Tunnel
             IdentityFile ~/.ssh/id_rsa # Private key location
             User cagatay.guertuerk # Username to connect to SSH service
             ForwardAgent yes
@@ -42,4 +42,4 @@ This Docker creates a simple SSH tunnel over a server. It is very useful when yo
 
 5. Run `docker-compose up -d`
 
-After you start up docker containers, any container in the same network will be able to access to tunneled mysql instance using ```tcp://mysql:3306```. Of course you can also expose port 3306 to be able to access to tunneled resource from your host machine.
+After you start up docker containers, any container in the same network will be able to access to tunneled mysql instance using `tcp://mysql:3306`. Of course you can also expose port 3306 to be able to access to tunneled resource from your host machine.
